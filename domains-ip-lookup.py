@@ -35,7 +35,7 @@ try:
                 line = domain.replace("\n", "") + " - " + str(error)
 
             # Print line
-            print line
+            print(line)
 
             # Write line to output domains file
             with open(domains_output, "a") as file:
@@ -43,4 +43,4 @@ try:
 
 except Exception as error:
     # Output exception
-    print "Error: " + error
+    print("Error: " + error)
