@@ -6,10 +6,10 @@ import os
 import socket
 
 # Set input file path with domains separated by lines
-domains_input = raw_input("Enter input domains file (lookup/domains-input.txt): ")
+domains_input = input("Enter input domains file (lookup/domains-input.txt): ")
 
 # Set output file path with domains separated by lines
-domains_output = raw_input("Enter input domains file (lookup/domains-output.txt): ")
+domains_output = input("Enter input domains file (lookup/domains-output.txt): ")
 
 # Define the default path for input domains file
 if domains_input == "":
