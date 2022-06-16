@@ -30,7 +30,7 @@ try:
             try:
                 # Try to resolve IP address
                 line = domain.replace("\n", "") + " - " + socket.getaddrinfo(domain.replace("\n", ""), 80)[0][4][0]
-            except Exception, error:
+            except Exception error:
                 # Output exception
                 line = domain.replace("\n", "") + " - " + str(error)
 
@@ -41,6 +41,6 @@ try:
             with open(domains_output, "a") as file:
                 file.write(line + "\n")
 
-except Exception, error:
+except Exception error:
     # Output exception
     print "Error: " + error
